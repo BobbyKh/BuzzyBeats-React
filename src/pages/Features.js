@@ -2,23 +2,21 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div className="container mx-auto p-12 bg-white rounded-lg shadow-lg">
-      <h2 className="text-5xl font-bold">Music Production Features</h2>
-      <ul className="list-disc mt-6 ml-6 space-y-2">
-        <li className="flex items-center">
-          <svg className="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          Beat Production
-        </li>
-        <li className="flex items-center">
-          <svg className="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          Mixing and Mastering
-        </li>
-        <li className="flex items-center">
-          <svg className="w-6 h-6 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          Recording Studio Services
-        </li>
-      </ul>
+    <div className="container mx-auto p-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="bg-green-500 p-6 rounded-lg shadow-lg animate-pulse">
+        <h3 className="text-2xl font-bold">Beat Production</h3>
+        <p className="text-lg mt-2">We can produce custom beats for your tracks, tailored to your style and preferences.</p>
+      </div>
+      <div className="bg-green-500 p-6 rounded-lg shadow-lg animate-pulse">
+        <h3 className="text-2xl font-bold">Mixing and Mastering</h3>
+        <p className="text-lg mt-2">We offer professional mixing and mastering services to help you get the best possible sound.</p>
+      </div>
+      <div className="bg-green-500 p-6 rounded-lg shadow-lg animate-pulse">
+        <h3 className="text-2xl font-bold">Recording Studio Services</h3>
+        <p className="text-lg mt-2">We also offer additional services such as recording studio services.</p>
+      </div>
     </div>
+    
   )
 
 }

@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+
+  useState(() => {
+    AOS.init({duration: 2000});
+
+  }
+
+  )
   return (
-    <footer className="bg-gray-200 h-96 flex flex-col justify-center py-12 px-6 md:px-12">
+    <footer className=" bg-inherit bg-black flex flex-col justify-center mt-12 " data-aos="fade-up" >
       <div className="container mx-auto flex justify-center">
         <div className="flex items-center">
           <a href="https://www.facebook.com/">
@@ -17,8 +26,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto flex flex-col items-center text-center mt-6">
-        <p className="text-lg">2022 Buzzy Beats. All rights reserved.</p>
-        <p className="text-sm">1234 Some Street, City, State 12345</p>
+        <p className="text-lg text-white">2022 Buzzy Beats. All rights reserved.</p>
+        <p className="text-sm text-white" >1234 Some Street, City, State 12345</p>
       </div>
     </footer>
 
